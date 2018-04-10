@@ -14,7 +14,7 @@ public class Info_Mypage_CertificateInfo {
         this.serialNum = _serialNum;
         this.title = _title;
         this.equip_list = _equip_list;
-        this.progress_state = _progress_state;
+        this.progress_state = _progress_state;//
     }
 
     public int getSerialNum(){return this.serialNum;}
