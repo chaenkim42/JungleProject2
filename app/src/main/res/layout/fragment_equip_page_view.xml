@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:orientation="vertical">
+
+       <!-- 제품정보-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:id="@+id/selected_equip_image"
+               android:layout_width="83dp"
+               android:layout_height="56dp"
+               android:layout_margin="10dp"
+               android:background="@drawable/camera" />
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:layout_weight="4"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/selected_equip_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:text="제품명"
+                   android:textSize="20dp" />
+
+               <Button
+                   android:id="@+id/addCartBtn_equip_page"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_alignEnd="@+id/cart_listView"
+                   android:layout_gravity="center|right"
+                   android:background="@drawable/round_backgound_red"
+                   android:gravity="center"
+                   android:text="장바구니 추가"
+                   android:textColor="@color/white"
+                   android:textSize="14dp"
+                   android:textStyle="bold" />
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <!-- 분류-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center">
+
+           <Button
+               android:id="@+id/equip_page_detail"
+               android:layout_width="wrap_content"
+               android:layout_height="35dp"
+               android:background="@color/white"
+               android:layout_weight="1"
+               android:text="상세설명"/>
+
+           <Button
+               android:id="@+id/equip_page_solution"
+               android:layout_width="wrap_content"
+               android:layout_height="35dp"
+               android:background="@color/white"
+               android:layout_weight="1"
+               android:text="사용 방법"/>
+
+           <Button
+               android:id="@+id/equip_page_notice"
+               android:layout_width="wrap_content"
+               android:layout_height="35dp"
+               android:background="@color/white"
+               android:layout_weight="1"
+               android:text="주의 사항"/>
+
+           <Button
+               android:id="@+id/equip_page_comment"
+               android:layout_width="wrap_content"
+               android:layout_height="35dp"
+               android:background="@color/white"
+               android:layout_weight="1"
+               android:text="사용후기"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</ScrollView>

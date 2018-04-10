@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/slateGray"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="2017.08.04 대여 신청 내역"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <ListView
+        android:id="@+id/cart_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="2dp"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/showWishListBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/cart_listView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/round_backgound_red"
+            android:gravity="center"
+            android:text="위시리스트 목록"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/addWishListBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/cart_listView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/round_backgound_red"
+            android:gravity="center"
+            android:text="새로운 위시리스트에 추가"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/rentalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/cart_listView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="62dp"
+            android:background="@drawable/round_backgound_red"
+            android:gravity="center"
+            android:text="대여신청"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

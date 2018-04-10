@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tab>
+    <tab
+        id="@+id/to_home"
+        title="홈으로"
+        titleSize="6dp"
+        icon="@drawable/ic_home"
+        activeColor="@color/tomato"
+        />
+
+    <tab
+        id="@+id/to_user"
+        title="내 정보"
+        titleSize="6dp"
+        icon="@drawable/ic_person"
+        activeColor="@color/tomato"
+        />
+
+    <tab
+        id="@+id/to_notice"
+        title="공지/문의"
+        titleSize="6dp"
+        icon="@drawable/ic_notice"
+        activeColor="@color/tomato"
+        />
+
+    <tab
+        id="@+id/to_board"
+        title="게시판"
+        titleSize="6dp"
+        icon="@drawable/ic_board"
+        activeColor="@color/tomato"
+        />
+
+</Tab>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.seungeun.jungleproject2.Menu_MainHome">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/searchLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/search_editText_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/round_background"
+                    android:hint="검색어를 입력하세요"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="?attr/colorControlNormal"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/search_btn_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_search" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/topScrollBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="48dp"
+                android:fadeScrollbars="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/category_item1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_weight="1"
+                        android:text="CAM" />
+
+                    <Button
+                        android:id="@+id/category_item2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CAME" />
+
+                    <Button
+                        android:id="@+id/category_item3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ETC" />
+
+                    <Button
+                        android:id="@+id/category_item4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LIG" />
+
+                    <Button
+                        android:id="@+id/category_item5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LIGE" />
+                    <Button
+                        android:id="@+id/category_item6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SOU" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <GridView
+                android:id="@+id/customGridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="100dp"
+                android:background="@color/white"
+                android:columnWidth="100dp"
+                android:gravity="center|bottom"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:padding="2dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_etc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include layout="@layout/bottom_navigation" />
+
+</RelativeLayout>
